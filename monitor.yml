@@ -1,11 +1,9 @@
-name: 机票价格监控
+name: flight-price-monitor
 
-on:
+'on':
   schedule:
-    # 每小时整点运行 (UTC 时间，对应北京时间整点)
     - cron: '0 * * * *'
-  # 支持手动触发
-  workflow_dispatch: {}
+  workflow_dispatch:
 
 jobs:
   monitor:
